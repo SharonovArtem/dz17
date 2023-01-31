@@ -14,19 +14,23 @@ namespace jun1
             Random random = new Random();
             int minNumber = 1;
             int maxNumber = 28;
+            int minThreeDigitNumber = 100;
             int number = random.Next(minNumber, maxNumber);
             int summand = number;
-            int maxThreeDigitNumber = 999;
+            int numberCount = 0;
+            int maxLimit = 999;
 
             Console.WriteLine(number);
 
-            for (int i = 0; i <= maxThreeDigitNumber; i += summand)
+            for (int i = 0; i <= maxLimit; i += summand)
             {
-                if (i >= 100)
+                if (i >= minThreeDigitNumber)
                 {
-                    Console.WriteLine(i);
-                }                
+                    numberCount += 1;
+                    
+                }               
             }
+            Console.WriteLine(numberCount);
         }
     }
 }
