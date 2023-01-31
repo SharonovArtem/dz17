@@ -27,6 +27,7 @@ namespace jun1
                 }     
                 Console.WriteLine(i);
             }
+            
             Console.WriteLine(number);
             Console.WriteLine(numberCount);
         }
