@@ -25,10 +25,8 @@ namespace jun1
                 if (i >= 100)
                 {
                     Console.WriteLine(i);
-                }
-                
+                }                
             }
-
         }
     }
 }
