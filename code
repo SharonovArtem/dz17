@@ -12,6 +12,7 @@ namespace jun1
         static void Main(string[] args)
         {
             Random random = new Random();
+            int minValue = 0;
             int minNumber = 1;
             int maxNumber = 28;
             int minLimit = 100;
@@ -19,15 +20,15 @@ namespace jun1
             int numberCount = 0;
             int maxLimit = 999;
 
-            for (int i = minLimit; i <= maxLimit && i >= minLimit; i += number)
+            for (int i = minValue; i <= maxLimit; i += number)
             {
                 if (i >= minLimit)
                 {
                     numberCount += 1;
+                    Console.WriteLine(i);
                 }     
-                Console.WriteLine(i);
             }
-            
+
             Console.WriteLine(number);
             Console.WriteLine(numberCount);
         }
